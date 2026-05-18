@@ -1,4 +1,4 @@
-resource "aws_vpc_peering_connection" "foo" {
+resource "aws_vpc_peering_connection" "default" {
   count = var.is_peering ? 1 : 0
 
   #accepter
