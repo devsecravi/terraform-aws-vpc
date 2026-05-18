@@ -29,7 +29,7 @@ locals {
              var.sb_tags_us_east_1a
       )
 
-      sb_final_tags_us_east_1a = merge(
+      sb_final_tags_us_east_1b = merge(
              local.common_tags,
              {
                 Name = "${var.project}-${var.environment}-public"
