@@ -12,17 +12,13 @@ resource "aws_internet_gateway" "main" {
   tags =local.igw_final_tags
 }
 
-resource "aws_subnet" "public_us_east_1a" {
-  vpc_id     = aws_vpc.main.id
-  cidr_block = "10.0.1.0/24"
+#resource "aws_subnet" "public" {
+  #count = length(var.public_subnet_cird)
+  #vpc_id     = aws_vpc.main.id
+  #cidr_block = var.public_subnet_cird[count.index]
 
-  tags =  local.sb_final_tags_us_east_1a
-}
+ # tags =  local.sb_final_tags_us_east_1a
+#}
 
-resource "aws_subnet" "public_us_east_1b" {
-  vpc_id     = aws_vpc.main.id
-  cidr_block = "10.0.2.0/24"
 
-  tags = local.sb_final_tags_us_east_1b
-}
 

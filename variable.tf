@@ -22,12 +22,7 @@ variable "igw_tags" {
     default = {}
 }
 
-variable "sb_tags_us_east_1a"{
-    type = map
-    default = {}
-}
-
-variable "sb_tags_us_east_1b"{
-    type = map
-    default = {}
+variable "public_subnet_cird"{
+    type = list
+    default = ["10.0.1.0/24","10.0.2.0/24"]
 }

@@ -20,21 +20,4 @@ locals {
             },
             var.igw_tags
         )
-      sb_final_tags_us_east_1a = merge(
-             local.common_tags,
-             {
-                Name = "${var.project}-${var.environment}"
-             }
-             ,
-             var.sb_tags_us_east_1a
-      )
-
-      sb_final_tags_us_east_1b = merge(
-             local.common_tags,
-             {
-                Name = "${var.project}-${var.environment}-public"
-             }
-             ,
-             var.sb_tags_us_east_1b
-      )
 }
