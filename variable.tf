@@ -21,3 +21,13 @@ variable "igw_tags" {
     type = map
     default = {}
 }
+
+variable "sb_tags_us_east_1a"{
+    type = map
+    default = {}
+}
+
+variable "sb_tags_us_east_1b"{
+    type = map
+    default = {}
+}
