@@ -1,5 +1,5 @@
 resource "aws_vpc_peering_connection" "foo" {
-  count = length(is_peering) ? 1 : 0
+  count = var.is_peering ? 1 : 0
 
   #accepter
   peer_vpc_id   = data.aws_vpc.default.id
